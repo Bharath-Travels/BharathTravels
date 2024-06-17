@@ -1,0 +1,379 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+        scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: farro;
+
+}
+.whatsapp{
+    z-index: 10000;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+}
+.fa-whatsapp{
+    font-size: 30px;
+}
+
+
+
+
+.desktopBanner{
+    width: 100%;
+}
+.mobileBanner{
+    display: none;
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+.block1{
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    color: #2B0400;
+    align-items: center;
+}
+.navigatorImg{
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+.heading1{
+    font-size:50px;
+    font-weight: 900;
+}
+.btn{
+    padding: 10px;
+    background-color: #F2494E;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    color: #F2494E;
+    border: 1px solid #F2494E;
+    background-color: white;
+    transition: .3s;
+}
+
+/* ---------------------------------------------------------------------------------- */
+.block2{
+    height: 100vh;
+    background-color: #2B0400;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box{
+   width: 20%;
+}
+.box p{
+    color: rgba(242, 234, 234, 0.7);
+}
+.boxImage{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+}
+/* ----------------------------------------------------------------------------- */
+.block3{
+
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span{
+    color: #F2494E;
+}
+.container3{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.review{
+    border: 1px solid #2B0400;
+    padding: 10px;
+    border-radius: 8px;
+    width: 25%;
+    height:250px;
+    text-align:left;
+    /* text-wrap: wrap; */
+}
+.avathar{
+    height: 60px;
+}
+/* ---------------------------------------------- Car Image --------------------------------------------- */
+.carsGalery{
+    border-top: 2px solid #2B0400;
+    height: fit-content;
+    text-align: center;
+    
+}
+.car{
+    display: flex;
+    justify-content: space-evenly;
+}
+figure{
+    text-align: center;
+}
+.carimg{
+    height: 300px;
+    width: 300px;
+}
+.swipe{
+    display: none;
+    background-color: #F2494E;
+    color: white;
+    padding: 10px;
+}
+
+/* -----------------------------------------------------------Block 4------------------------------------------- */
+.block4{
+    min-height: 100vh;
+    max-height: fit-content;
+    background-color: #2B0400;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container4 p{
+   color: rgba(242, 234, 234, 0.7);
+}
+.pricing{
+    display: flex;
+    justify-content: space-around;
+}
+.info{
+    width: 30%;
+}
+.contact a{
+    color: #F2494E;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bharathImg{
+    border-radius: 8px;
+     height: 250px;
+    width: 300px;
+}
+.copyright{
+    font-size: 12px;
+}
+.bharathImgMobile{
+    display: none;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------ Mobile View ---------------------------------------------- */
+@media screen and (max-width : 600px) {
+    .desktopBanner{
+    display: none;
+    }
+   .mobileBanner{
+    display: block;
+    
+   }
+   /* ------------------------------- Block 1 ------------------------------------ */
+   .block1{
+    flex-direction: column;
+   }
+   .heading1{
+    font-size:20px;
+    font-weight: 900;
+    }
+    .navigatorImg{
+        height: 200px;
+        width: 200px;
+    }
+    .para1,.btn{
+        font-size: 13px;
+    }
+    /* ------------------------------ Block 2 ------------------------------------------- */
+    .block2{
+        width: 100%;
+        justify-content: start;
+        height: fit-content;
+    }
+
+    .box{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .container2{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .block2 h1{
+        width: 80%;
+        font-size:18px;
+    }
+    .boxImage{
+        height: 80px;
+        width: 80px;
+    }
+    .box div{
+        width: 50%;
+        text-align: left;
+        font-size: 12px;
+    }
+    /* ----------------------------------------- Block 3 --------------------------------------- */
+    .block3{
+        align-items: center;
+        width: 100%;
+    }
+    .block3 h1{
+        font-size: 18px;
+    }
+    .container3{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        width: 100%;
+        overflow-x: scroll;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .review{
+        margin-bottom: 20px;
+        width: 80%;
+        height:fit-content;
+    }
+    .review p{
+        font-size: 13px;
+    }
+    /* ---------------------------------------------- Car Image --------------------------------------------- */
+    .carsGalery h1{
+        font-size: 18px;
+    }
+    .car{
+        text-align: center;
+        overflow-x:scroll ;
+        scroll-snap-type:x mandatory;
+    }
+    figure{
+        scroll-snap-align: center;
+    }
+    .swipe{
+        display: block;
+    }
+    /* ----------------------------------------- Block 4 ------------------------------------------- */
+    .block4{
+        height: fit-content;
+    }
+    .block4 h1{
+        font-size: 18px;
+    }
+    .pricing{
+        align-items: center;
+        flex-direction: column;
+    }
+    .info{
+        font-size: 13px;
+        width: 80%;
+    }
+    .contact{
+        text-align: center;
+        font-size: 13px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+    .bharathImg{
+        display: none;
+    }
+    .bharathImgMobile{
+        display: block;
+        width: 100%;
+        height: 30vh;
+    }
+
+}
+/* -------------------------------------- ipad view ------------------------------------- */
+@media screen and (min-width:600px) and (max-width : 850px){
+    /* --------------------------Block 1 ---------------------------------------- */
+    .heading1{
+        font-size: 25px;
+    }
+    /* --------------------------Block 2 ---------------------------------------- */
+    .block2 h1{
+        font-size: 20px;
+    }
+    .container2{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .box{
+
+        font-size: 15px;
+         width: 100%;
+         display: flex;
+         align-items: center;
+    }
+    .box div{
+        width: 70%;
+    }
+    .boxImage{
+        margin-right: 10%;
+        height: 150px;
+        width: 150px;
+    }
+  /* ------------------------------------ Block 3 ------------------------------------- */
+  .block3 p{
+    font-size: 13px;
+  }
+  /* ------------------------------------ cars ------------------------------------------ */
+      .carsGalery h1{
+        font-size: 25px;
+    }
+    .car{
+        text-align: center;
+        overflow-x:scroll ;
+        scroll-snap-type:x mandatory;
+    }
+    figure{
+        scroll-snap-align: center;
+    }
+  /* --------------------------------- Block 4 --------------------------------------- */
+  .block4 h1{
+    font-size: 18px;
+  }
+  .info{
+    
+    font-size: 13px;
+  }
+  .contact{
+    text-align: center;
+  }
+  .copyright{
+    font-size: 10px;
+  }
+
+}
